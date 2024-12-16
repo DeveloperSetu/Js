@@ -1,0 +1,38 @@
+//======================================  Active Nav Item =======================================//
+var home = document.getElementById("home");
+var aboutUs = document.getElementById("aboutus");
+var services = document.getElementById("services");
+var doctor = document.getElementById("doctor");
+var contactus =  document.getElementById("contactUs");
+var currentUrl = window.location.pathname;
+console.log(currentUrl);
+
+                if (currentUrl === "/AboutUs" ) {
+                    console.log("about us" + this.currentUrl)
+                    aboutUs.classList.add("active");
+                } 
+                else if (currentUrl === "/services") {
+                    console.log("service" + this.currentUrl)
+
+                    services.classList.add("active");
+                } 
+                else if (currentUrl === "/doctors") {
+                    console.log(doctor);
+
+                   doctor.classList.add("active");
+                } 
+                else if (currentUrl === "/ContactUs") {
+                    contactus.classList.add("active");
+                } 
+                else {
+                     home.classList.add("active"); 
+                }
+
+//======================================  Active Nav Item whih click event =======================================//
+// const navItems = document.querySelectorAll(".navItem"); 
+// navItems.forEach(item => {
+//     item.addEventListener("click", function(e) {
+//         navItems.forEach(navItem => navItem.classList.remove("active"));
+//         item.classList.add("active");
+//     });
+// });
